@@ -18,6 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // FM = DBFM， 而GFM是单独的
+    /*如果这个字符串isEqual gfm。或者那三个。
+     以上三种情况都不符合，那就再判断是否包含fm，包含那就按fm处理
+     */
 	// Do any additional setup after loading the view, typically from a nib.
     NSArray *array = [MyRegex splitLetterAndNumber:@"adc123"];
     NSLog(@"%@", array);
